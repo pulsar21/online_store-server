@@ -13,6 +13,13 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
+// const pool = new Pool({
+//     connectionString: process.env.DATABASE_URL,
+//     ssl: {
+//         rejectUnauthorized: false
+//     }
+// })
+
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'static')));
