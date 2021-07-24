@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+        .reset-password {
+            height: 60vh;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background-color: #6c63ff;
+        }
+        .block {
+            max-width: 100%;
+            width: 500px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: #f2f9ff;
+        }
+        .header {
+            margin-top: 2rem;
+            display: flex;
+            color: #000;
+        }
+        .header img {
+            width: 250px;
+            height: 200px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+        .header p {
+            margin-left: 1rem;
+        }
+        .title {
+            text-align: center;
+            color: #000;
+        }
+        .content {
+            margin-top: 3rem;
+        }
+        .email a {
+            text-decoration: none;
+            color: #6c63ff;
+        }
+        .btn {
+            margin-top: 1rem;
+            display: flex;
+        }
+        .btn button {
+            width: 250px;
+            height: 35px;
+            padding: 5px 10px;
+            border: 1px solid #6c63ff;
+            border-radius: 40px;
+            background: #6c63ff;
+            margin: 0 auto;
+        }
+        .btn button a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .code {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 24px;
+            color: #000;
+        }
+        .desc {
+            margin-top: 1rem;
+            text-align: center;
+            color: #000;
+        }
+        .store-name {
+            text-align: center;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <section class="reset-password">
+        <div class="block">
+            <div class="header">
+                <img src="cid:logo">
+            </div>
+            <h1 class="store-name">SMM Store</h1>
+            <div class="content">
+                <h1 class="title">Verify Account - <span class="email">{{email}}</span></h1>
+                <p class="desc">Click this button if you verify account and copy code</p>
+                <h2 class="code">{{code}}</h2>
+                <div class="btn">
+                    <button><a href={{link}}>Click me!</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
