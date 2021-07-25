@@ -11,8 +11,6 @@ const sslOptions = {
 }
 const dialectOptions = process.env.NODE_ENV === 'production' ? sslOptions : {};
 
-console.log(dialectOptions);
-
 module.exports = new Sequelize(process.env.NODE_ENV === 'production' ? proConfig : devConfig, {
     dialect: 'postgres',
     ssl: true,
