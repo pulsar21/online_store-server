@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
@@ -33,5 +33,8 @@
     "sequelize-search-builder": "^0.11.0",
     "uuid": "^8.3.2",
     "uuid-int": "^3.0.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
